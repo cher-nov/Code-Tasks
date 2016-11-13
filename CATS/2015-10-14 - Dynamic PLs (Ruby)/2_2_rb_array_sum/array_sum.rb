@@ -1,0 +1,1 @@
+open('output.txt', 'w').write( open('input.txt', 'r').read().split().drop(1).map(&:to_i).reduce(:+) )

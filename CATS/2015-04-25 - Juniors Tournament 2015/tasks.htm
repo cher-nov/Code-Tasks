@@ -1,0 +1,1080 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="https://imcs.dvfu.ru/cats/static/images/std/favicon.ico" type="image/x-icon"><title>Турнир юных программистов 2015  </title>
+
+<link rel="stylesheet" type="text/css" href="tasks_files/main.css">
+<!--[if IE]><link rel="stylesheet" type="text/css" href="docs/std/ie.css"><![endif]-->
+
+
+
+<script type="text/javascript" src="tasks_files/MathJax.js"></script>
+<script type="text/javascript">window.MathJax || document.write('<script src="js/lib/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')</script>
+<script type="text/javascript" src="tasks_files/jquery.js"></script>
+<script type="text/javascript">
+function setTex(tex) {
+    var magic = '~!!!~';
+    var t = tex.attr('title');
+    t = t.replace(/(\\[a-zA-Z]+)/g, '$1' + magic);
+    t = t.replace(/([a-zA-Z0-9},])\s+(?=[a-zA-Z])/g, '$1\\,');
+    t = t.replace(new RegExp(magic, 'g'), '');
+    tex.html("\\(" + t + '\\)');
+}
+
+window.$ && window.MathJax && $(document).ready(function() {
+    MathJax.Hub.Config({
+        TeX: { Macros: { deg: '^\\circ' } },
+        "HTML-CSS": { scale: 90 }
+    });
+    $('span.TeX').each(function () {
+        MathJax.Hub.Queue([ setTex, $(this) ], [ 'Typeset', MathJax.Hub, this ]);
+    });
+});
+</script>
+
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax:focus, body :focus .MathJax {display: inline-table}
+.MathJax.MathJax_FullWidth {text-align: center; display: table-cell!important; width: 10000em!important}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax_LineBox {display: table!important}
+.MathJax_LineBox span {display: table-cell!important; width: 10000em!important; min-width: 0; max-width: none; padding: 0; border: 0; margin: 0}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Main; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Main; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf?V=2.7.0') format('opentype'); font-weight: bold}
+@font-face {font-family: MathJax_Main; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf?V=2.7.0') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Math; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf?V=2.7.0') format('opentype'); font-style: italic}
+@font-face {font-family: MathJax_Caligraphic; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size1; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size2; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size3; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf?V=2.7.0') format('opentype')}
+@font-face {font-family: MathJax_Size4; src: url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff?V=2.7.0') format('woff'), url('https://cdn.mathjax.org/mathjax/2.7-latest/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf?V=2.7.0') format('opentype')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px none; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+
+<div class="problem_text">
+  <a name="prA"></a>
+  <h2>Задача A. Параллелепипед со спицами</h2>
+Автор: А. Кленин<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+<p>
+Возьмём <span class="TeX" title="A \times B \times C"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-1-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-1" style="width: 5.086em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.876em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.413em, 1004.88em, 2.563em, -1000em); top: -2.335em; left: 0em;"><span class="mrow" id="MathJax-Span-2"><span class="mi" id="MathJax-Span-3" style="font-family: MathJax_Math; font-style: italic;">A</span><span class="mo" id="MathJax-Span-4" style="font-family: MathJax_Main; padding-left: 0.222em;">×</span><span class="mi" id="MathJax-Span-5" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">B</span><span class="mo" id="MathJax-Span-6" style="font-family: MathJax_Main; padding-left: 0.222em;">×</span><span class="mi" id="MathJax-Span-7" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.222em;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.335em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.094em; border-left: 0px solid; width: 0px; height: 0.91em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mo>×</mo><mi>B</mi><mo>×</mo><mi>C</mi></math></span></span><script type="math/tex" id="MathJax-Element-1">A \times B \times C</script></span> одинаковых кубиков.
+Сложим из всех кубиков один большой прямоугольный параллелепипед шириной <span class="TeX" title="A"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-2-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-8" style="width: 0.828em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.755em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.344em, 1000.73em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-9"><span class="mi" id="MathJax-Span-10" style="font-family: MathJax_Math; font-style: italic;">A</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.887em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi></math></span></span><script type="math/tex" id="MathJax-Element-2">A</script></span> кубиков,
+высотой <span class="TeX" title="B"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-3-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-11" style="width: 0.828em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.755em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.75em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-12"><span class="mi" id="MathJax-Span-13" style="font-family: MathJax_Math; font-style: italic;">B</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>B</mi></math></span></span><script type="math/tex" id="MathJax-Element-3">B</script></span> кубиков и длиной <span class="TeX" title="C"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-4-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-14" style="width: 0.896em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.824em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.355em, 1000.82em, 2.495em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-15"><span class="mi" id="MathJax-Span-16" style="font-family: MathJax_Math; font-style: italic;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.094em; border-left: 0px solid; width: 0px; height: 0.899em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>C</mi></math></span></span><script type="math/tex" id="MathJax-Element-4">C</script></span> кубиков.
+
+Начнём протыкать этот параллелепипед спицами параллельно его рёбрам.
+</p>
+<p>
+Требуется определить максимальное количество спиц, которые можно воткнуть таким образом,
+чтобы через каждый кубик проходило не более одной спицы.
+</p>
+</div>
+
+
+
+  <h3>Формат входного файла</h3>
+  <div>
+<p>
+Входной файла содержит целые числа <span class="TeX" title="A B C"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-5-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-17" style="width: 2.819em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.679em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.344em, 1002.68em, 2.495em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-18"><span class="mi" id="MathJax-Span-19" style="font-family: MathJax_Math; font-style: italic;">A</span><span class="mspace" id="MathJax-Span-20" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-21" style="font-family: MathJax_Math; font-style: italic;">B</span><span class="mspace" id="MathJax-Span-22" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-23" style="font-family: MathJax_Math; font-style: italic;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.094em; border-left: 0px solid; width: 0px; height: 0.91em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>A</mi><mspace width="thinmathspace"></mspace><mi>B</mi><mspace width="thinmathspace"></mspace><mi>C</mi></math></span></span><script type="math/tex" id="MathJax-Element-5">A\,B\,C</script></span>&nbsp;— размеры параллелепипеда.
+</p>
+</div>
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+Выходной файл должен содержать единственно целое число&nbsp;— максимальное количество спиц.
+</p>
+</div>
+    
+
+  <h3>Ограничения</h3>
+  <div>
+<p><span class="TeX" title="1 \le A, B, C \le 10000"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-6-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;A&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;mi&gt;B&lt;/mi&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;mi&gt;C&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;10000&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-24" style="width: 10.031em; display: inline-block;"><span style="display: inline-block; position: relative; width: 9.615em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.413em, 1009.58em, 2.735em, -1000em); top: -2.335em; left: 0em;"><span class="mrow" id="MathJax-Span-25"><span class="mn" id="MathJax-Span-26" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-27" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mi" id="MathJax-Span-28" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">A</span><span class="mo" id="MathJax-Span-29" style="font-family: MathJax_Main;">,</span><span class="mspace" id="MathJax-Span-30" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-31" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">B</span><span class="mo" id="MathJax-Span-32" style="font-family: MathJax_Main;">,</span><span class="mspace" id="MathJax-Span-33" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="mi" id="MathJax-Span-34" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.167em;">C<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.045em;"></span></span><span class="mo" id="MathJax-Span-35" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mn" id="MathJax-Span-36" style="font-family: MathJax_Main; padding-left: 0.278em;">10000</span></span><span style="display: inline-block; width: 0px; height: 2.335em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.273em; border-left: 0px solid; width: 0px; height: 1.089em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>A</mi><mo>,</mo><mspace width="thinmathspace"></mspace><mi>B</mi><mo>,</mo><mspace width="thinmathspace"></mspace><mi>C</mi><mo>≤</mo><mn>10000</mn></math></span></span><script type="math/tex" id="MathJax-Element-6">1 \le A,\,B,\,C \le 10000</script></span></p>
+</div>
+
+
+<h3>Примеры тестов</h3>
+<table class="sample" id="sample991860">
+<tbody><tr><th>№</th>
+<th>Входной файл (<tt>input.txt</tt>)</th>
+<th>Выходной файл (<tt>output.txt</tt>)</th></tr>
+
+<tr>
+  <td>1</td>
+  <td><pre><code>37 19 29
+</code></pre></td>
+  <td><pre><code>1073
+</code></pre></td>
+</tr>
+
+</tbody></table>
+
+
+  
+  <hr>
+</div>
+
+<div class="problem_text" style="page-break-before: always">
+  <a name="prB"></a>
+  <h2>Задача B. Питание программистов</h2>
+Автор: А. Кленин, И. Туфанов<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+<p>
+    Оргкомитет сборов по программированию знает, что важно организовать правильное
+    питание участников. Еда должна быть вкусной, а блюда&nbsp;— разнообразными.
+    Поэтому разработку меню доверили повару тёте Вале.
+</p><p>
+    Тётя Валя умеет готовить несколько разных блюд. Она использует для их обозначения
+    маленькие английские буквы. Всего в течение сборов будет <span class="TeX" title="n"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-7-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-37" style="width: 0.69em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.618em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.618em, 1000.6em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-38"><span class="mi" id="MathJax-Span-39" style="font-family: MathJax_Math; font-style: italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.614em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-7">n</script></span>
+    приёмов пищи. Тётя Валя составила черновик меню&nbsp;— строку <span class="TeX" title="s"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-8-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-40" style="width: 0.553em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.481em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.618em, 1000.43em, 2.483em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-41"><span class="mi" id="MathJax-Span-42" style="font-family: MathJax_Math; font-style: italic;">s</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.082em; border-left: 0px solid; width: 0px; height: 0.613em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math></span></span><script type="math/tex" id="MathJax-Element-8">s</script></span>, состоящую
+    из <span class="TeX" title="n"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-9-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-43" style="width: 0.69em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.618em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.618em, 1000.6em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-44"><span class="mi" id="MathJax-Span-45" style="font-family: MathJax_Math; font-style: italic;">n</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.614em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>n</mi></math></span></span><script type="math/tex" id="MathJax-Element-9">n</script></span> маленьких английских букв. Символ <span class="TeX" title="s_i"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-10-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-46" style="width: 0.828em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.755em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(0.382em, 1000.76em, 1.394em, -1000em); top: -1.03em; left: 0em;"><span class="mrow" id="MathJax-Span-47"><span class="msubsup" id="MathJax-Span-48"><span style="display: inline-block; position: relative; width: 0.788em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.42em, 4.2em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-49" style="font-family: MathJax_Math; font-style: italic;">s</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.469em;"><span class="mi" id="MathJax-Span-50" style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;">i</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 1.03em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.236em; border-left: 0px solid; width: 0px; height: 0.767em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>s</mi><mi>i</mi></msub></math></span></span><script type="math/tex" id="MathJax-Element-10">s_i</script></span> обозначает блюдо,
+    которое она запланировала для <span class="TeX" title="i"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-11-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-51" style="width: 0.347em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.343em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.399em, 1000.3em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-52"><span class="mi" id="MathJax-Span-53" style="font-family: MathJax_Math; font-style: italic;">i</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.842em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>i</mi></math></span></span><script type="math/tex" id="MathJax-Element-11">i</script></span>-го приёма пищи.
+</p><p>
+    Черновик меню полностью сбалансирован по всем питательным компонентам, но
+    тётя Валя не особо заботилась о разнообразии.
+</p><p>
+    Помогите тёте Вале сделать меню наиболее разнообразным. Для этого нужно
+    переставить блюда в меню таким образом,
+    чтобы минимальное расстояние между одинаковыми блюдами было как можно больше.
+</p><p>
+    Если существует несколько решений, выведите любое из них.
+</p>
+
+</div>
+
+
+
+  <h3>Формат входного файла</h3>
+  <div>
+<p>
+    Входной файл содержит строку <span class="TeX" title="s"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-12-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-54" style="width: 0.553em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.481em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.618em, 1000.43em, 2.483em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-55"><span class="mi" id="MathJax-Span-56" style="font-family: MathJax_Math; font-style: italic;">s</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.082em; border-left: 0px solid; width: 0px; height: 0.613em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>s</mi></math></span></span><script type="math/tex" id="MathJax-Element-12">s</script></span>, состоящую из маленьких букв английского алфавита&nbsp;— черновик меню.
+</p>
+</div>
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+    Выходной файл должен содержать единственную строку&nbsp;— окончательный вариант меню.
+</p>
+</div>
+    
+
+  <h3>Ограничения</h3>
+  <div>
+<p><span class="TeX" title="1 \le n \le 100000"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-13-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;100000&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-57" style="width: 7.49em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.212em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.463em, 1007.17em, 2.679em, -1000em); top: -2.335em; left: 0em;"><span class="mrow" id="MathJax-Span-58"><span class="mn" id="MathJax-Span-59" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-60" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mi" id="MathJax-Span-61" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">n</span><span class="mo" id="MathJax-Span-62" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mn" id="MathJax-Span-63" style="font-family: MathJax_Main; padding-left: 0.278em;">100000</span></span><span style="display: inline-block; width: 0px; height: 2.335em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.215em; border-left: 0px solid; width: 0px; height: 0.979em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>100000</mn></math></span></span><script type="math/tex" id="MathJax-Element-13">1 \le n \le 100000</script></span>;</p>
+</div>
+
+
+<h3>Примеры тестов</h3>
+<table class="sample" id="sample991799">
+<tbody><tr><th>№</th>
+<th>Входной файл (<tt>input.txt</tt>)</th>
+<th>Выходной файл (<tt>output.txt</tt>)</th></tr>
+
+<tr>
+  <td>1</td>
+  <td><pre><code>olmkoo
+</code></pre></td>
+  <td><pre><code>moloko
+</code></pre></td>
+</tr>
+
+</tbody></table>
+
+
+  
+  <hr>
+</div>
+
+<div class="problem_text" style="page-break-before: always">
+  <a name="prC"></a>
+  <h2>Задача C. Открытый подсчёт 2</h2>
+Автор: А. Кленин<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+<p>
+Юный робототехник Вася построил робота, который способен перемещаться по неограниченному
+клетчатому полю согласно заложенной в него программе.
+Робот занимает ровно одну клетку поля.
+Программа для робота состоит из последовательности команд, разделённых пробелом.
+Каждая команда состоит из латинской буквы и натурального числа.
+Буква задаёт направление движения
+(<tt>U</tt>&nbsp;— на север, <tt>D</tt>&nbsp;— на юг, <tt>L</tt>&nbsp;— на запад, <tt>R</tt>&nbsp;— на восток),
+а число&nbsp;— количество клеток, на которое робот должен сдвинуться.
+</p>
+<p>
+Робот выполняет команды в бесконечном цикле&nbsp;— т. е. после выполнения последней команды
+он снова переходит к первой.
+</p>
+<p>
+На поле задана система координат. Ось ординат направлена не север,
+ось абсцисс направлена на восток. Робот начинает движение с клетки с координатами <span class="TeX" title="(0, 0)"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-14-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-64" style="width: 2.476em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.335em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.31em, 1002.24em, 2.723em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-65"><span class="mo" id="MathJax-Span-66" style="font-family: MathJax_Main;">(</span><span class="mn" id="MathJax-Span-67" style="font-family: MathJax_Main;">0</span><span class="mo" id="MathJax-Span-68" style="font-family: MathJax_Main;">,</span><span class="mn" id="MathJax-Span-69" style="font-family: MathJax_Main; padding-left: 0.167em;">0</span><span class="mo" id="MathJax-Span-70" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.331em; border-left: 0px solid; width: 0px; height: 1.183em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-14">(0, 0)</script></span>.
+</p>
+<p>
+Требуется по данной программе определить количество клеток внутри прямоугольника
+с координатами <span class="TeX" title="(x_1, y_1) - (x_2, y_2)"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-15-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mo stretchy=&quot;false&quot;&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;,&lt;/mo&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo stretchy=&quot;false&quot;&gt;)&lt;/mo&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-71" style="width: 8.314em; display: inline-block;"><span style="display: inline-block; position: relative; width: 7.967em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.448em, 1007.87em, 2.86em, -1000em); top: -2.404em; left: 0em;"><span class="mrow" id="MathJax-Span-72"><span class="mo" id="MathJax-Span-73" style="font-family: MathJax_Main;">(</span><span class="msubsup" id="MathJax-Span-74"><span style="display: inline-block; position: relative; width: 1.001em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.52em, 4.201em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-75" style="font-family: MathJax_Math; font-style: italic;">x</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.572em;"><span class="mn" id="MathJax-Span-76" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mo" id="MathJax-Span-77" style="font-family: MathJax_Main;">,</span><span class="mspace" id="MathJax-Span-78" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="msubsup" id="MathJax-Span-79" style="padding-left: 0.167em;"><span style="display: inline-block; position: relative; width: 0.919em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.5em, 4.395em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-80" style="font-family: MathJax_Math; font-style: italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.006em;"></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.49em;"><span class="mn" id="MathJax-Span-81" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mo" id="MathJax-Span-82" style="font-family: MathJax_Main;">)</span><span class="mo" id="MathJax-Span-83" style="font-family: MathJax_Main; padding-left: 0.222em;">−</span><span class="mo" id="MathJax-Span-84" style="font-family: MathJax_Main; padding-left: 0.222em;">(</span><span class="msubsup" id="MathJax-Span-85"><span style="display: inline-block; position: relative; width: 1.001em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.52em, 4.201em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-86" style="font-family: MathJax_Math; font-style: italic;">x</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.572em;"><span class="mn" id="MathJax-Span-87" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mo" id="MathJax-Span-88" style="font-family: MathJax_Main;">,</span><span class="mspace" id="MathJax-Span-89" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="msubsup" id="MathJax-Span-90" style="padding-left: 0.167em;"><span style="display: inline-block; position: relative; width: 0.919em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.5em, 4.395em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-91" style="font-family: MathJax_Math; font-style: italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.006em;"></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.49em;"><span class="mn" id="MathJax-Span-92" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mo" id="MathJax-Span-93" style="font-family: MathJax_Main;">)</span></span><span style="display: inline-block; width: 0px; height: 2.404em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.331em; border-left: 0px solid; width: 0px; height: 1.183em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mspace width="thinmathspace"></mspace><msub><mi>y</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mspace width="thinmathspace"></mspace><msub><mi>y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></math></span></span><script type="math/tex" id="MathJax-Element-15">(x_1,\,y_1) - (x_2,\,y_2)</script></span>, которые будут когда-либо посещены роботом.
+</p>
+<p>
+</p><h3>Отправка решения и тестирование</h3>
+Данная задача будет проверяться на <em>ОДНОМ</em> входном файле, содержащем все тесты.
+Этот файл можно скачать <a href="https://imcs.dvfu.ru/cats/static/download/att/NCZCkO0Hcg1ruru48AnPqpTNHhR7jTWd_input.txt">ЗДЕСЬ</a>.
+<p></p>
+<p>
+В качестве решения принимается как программа, так и текстовый файл, содержащий ответ к задаче
+в требуемом формате (при его отправке следует выбрать в тестирующей системе среду разработки "Answer text").
+</p>
+<p>
+Баллы будут начисляться пропорционально количеству правильных ответов в выходном файле.
+Если правильный ответ на какой-то из тестов получить не удалось, выведите вместо него число <span class="TeX" title="0"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-16-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-94" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.394em, 1000.51em, 2.495em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-95"><span class="mn" id="MathJax-Span-96" style="font-family: MathJax_Main;">0</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.094em; border-left: 0px solid; width: 0px; height: 0.858em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>0</mn></math></span></span><script type="math/tex" id="MathJax-Element-16">0</script></span>.
+</p>
+</div>
+
+
+
+  <h3>Формат входного файла</h3>
+  <div>
+<p>
+Первая строка входного файла содержит целое число <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-17-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-97" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-98"><span class="mi" id="MathJax-Span-99" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-17">N</script></span>&nbsp;— количество программ.
+Далее следует <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-18-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-100" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-101"><span class="mi" id="MathJax-Span-102" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-18">N</script></span> пар строк. В каждой паре первая строка содержит программу,
+а вторая&nbsp;— целые числа <span class="TeX" title="x_1 y_1 x_2 y_2"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-19-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mspace width=&quot;thinmathspace&quot; /&gt;&lt;msub&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-103" style="width: 4.536em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.327em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(0.382em, 1004.33em, 1.441em, -1000em); top: -1.03em; left: 0em;"><span class="mrow" id="MathJax-Span-104"><span class="msubsup" id="MathJax-Span-105"><span style="display: inline-block; position: relative; width: 1.001em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.52em, 4.201em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-106" style="font-family: MathJax_Math; font-style: italic;">x</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.572em;"><span class="mn" id="MathJax-Span-107" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mspace" id="MathJax-Span-108" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="msubsup" id="MathJax-Span-109"><span style="display: inline-block; position: relative; width: 0.919em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.5em, 4.395em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-110" style="font-family: MathJax_Math; font-style: italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.006em;"></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.49em;"><span class="mn" id="MathJax-Span-111" style="font-size: 70.7%; font-family: MathJax_Main;">1</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mspace" id="MathJax-Span-112" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="msubsup" id="MathJax-Span-113"><span style="display: inline-block; position: relative; width: 1.001em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.52em, 4.201em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-114" style="font-family: MathJax_Math; font-style: italic;">x</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.572em;"><span class="mn" id="MathJax-Span-115" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span><span class="mspace" id="MathJax-Span-116" style="height: 0em; vertical-align: 0em; width: 0.167em; display: inline-block; overflow: hidden;"></span><span class="msubsup" id="MathJax-Span-117"><span style="display: inline-block; position: relative; width: 0.919em; height: 0px;"><span style="position: absolute; clip: rect(3.335em, 1000.5em, 4.395em, -1000em); top: -3.984em; left: 0em;"><span class="mi" id="MathJax-Span-118" style="font-family: MathJax_Math; font-style: italic;">y<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.006em;"></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -3.834em; left: 0.49em;"><span class="mn" id="MathJax-Span-119" style="font-size: 70.7%; font-family: MathJax_Main;">2</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 1.03em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.285em; border-left: 0px solid; width: 0px; height: 0.816em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mn>1</mn></msub><mspace width="thinmathspace"></mspace><msub><mi>y</mi><mn>1</mn></msub><mspace width="thinmathspace"></mspace><msub><mi>x</mi><mn>2</mn></msub><mspace width="thinmathspace"></mspace><msub><mi>y</mi><mn>2</mn></msub></math></span></span><script type="math/tex" id="MathJax-Element-19">x_1\,y_1\,x_2\,y_2</script></span>.
+</p>
+</div>
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+Выходной файл должен содержать <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-20-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-120" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-121"><span class="mi" id="MathJax-Span-122" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-20">N</script></span> целых чисел&nbsp;— количество клеток,
+посещённых роботом при выполнении каждой программы внутри соответствующего прямоугольника.
+</p>
+</div>
+    
+
+
+<h3>Примеры тестов</h3>
+<table class="sample" id="sample992295">
+<tbody><tr><th>№</th>
+<th>Входной файл (<tt>input.txt</tt>)</th>
+<th>Выходной файл (<tt>output.txt</tt>)</th></tr>
+
+<tr>
+  <td>1</td>
+  <td><pre><code>2
+U1 R2
+1 1 3 2
+L1 R2
+100 -10 200 10</code></pre></td>
+  <td><pre><code>4
+101
+</code></pre></td>
+</tr>
+
+</tbody></table>
+
+
+  
+  <hr>
+</div>
+
+<div class="problem_text" style="page-break-before: always">
+  <a name="prD"></a>
+  <h2>Задача D. Методом тряпки</h2>
+Автор: И. Туфанов<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+<p>
+    Школьники плохо написали контрольную работу по признакам делимости на <span class="TeX" title="k"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-21-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-123" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.366em, 1000.53em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-124"><span class="mi" id="MathJax-Span-125" style="font-family: MathJax_Math; font-style: italic;">k</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.876em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-21">k</script></span>.
+    Марфа Геннадьевна оставила их после уроков для работы над ошибками.
+    Она написала на доске большое число <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-22-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-126" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-127"><span class="mi" id="MathJax-Span-128" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-22">N</script></span> и сама на секунду задумалась.
+    А делится ли её число на <span class="TeX" title="k"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-23-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-129" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.366em, 1000.53em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-130"><span class="mi" id="MathJax-Span-131" style="font-family: MathJax_Math; font-style: italic;">k</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.876em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-23">k</script></span>?
+</p><p>
+    Марфа Геннадьевна решила, что если её число не делится на <span class="TeX" title="k"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-24-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-132" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.366em, 1000.53em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-133"><span class="mi" id="MathJax-Span-134" style="font-family: MathJax_Math; font-style: italic;">k</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.876em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-24">k</script></span>, то она
+    исправит его методом тряпки, т.е. сотрёт несколько цифр в произвольных местах
+    таким образом, чтобы новое число на доске делилось на <span class="TeX" title="k"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-25-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-135" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.366em, 1000.53em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-136"><span class="mi" id="MathJax-Span-137" style="font-family: MathJax_Math; font-style: italic;">k</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.876em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-25">k</script></span>.
+    При этом Марфа Геннадьевна не хочет себя утруждать и собирается стереть
+    как можно меньше цифр.
+</p><p>
+    Напишите программу, которая поможет Марфе Геннадьевне определить, какое число
+    будет записано на доске в итоге. В записи числа не должны присутствовать
+    лидирующие нули. Если искомых чисел найдётся несколько, выведите любое из них.
+    Если искомого числа не существует, то Марфе Геннадьевне придётся стереть всё
+    число целиком, а вам &nbsp;— вывести слово <tt>IMPOSSIBLE</tt>.
+</p><p>
+    В первом примере необходимо стереть цифры 7 и 6. Если стереть цифры 1, 4, 6,
+    то полученное число 7 будет делиться на 7, но этот ответ не оптимален.
+</p><p>
+    Во втором примере нельзя просто стереть цифру 1, поскольку оставшееся число
+    будет иметь лидирующий ноль. Необходимо стереть первые две цифры.
+</p><p>
+    В третьем примере ничего нельзя поделать.
+</p>
+
+<h3>Система оценивания</h3>
+<p>
+    Рекомендуется рассмотреть следующие частные случаи:
+    </p><ul>
+        <li><span class="TeX" title="N \le 10^{18}"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-26-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;18&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-138" style="width: 4.262em; display: inline-block;"><span style="display: inline-block; position: relative; width: 4.052em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.403em, 1004.05em, 2.817em, -1000em); top: -2.473em; left: 0em;"><span class="mrow" id="MathJax-Span-139"><span class="mi" id="MathJax-Span-140" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span><span class="mo" id="MathJax-Span-141" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="msubsup" id="MathJax-Span-142" style="padding-left: 0.278em;"><span style="display: inline-block; position: relative; width: 1.782em; height: 0px;"><span style="position: absolute; clip: rect(3.111em, 1000.96em, 4.212em, -1000em); top: -3.984em; left: 0em;"><span class="mn" id="MathJax-Span-143" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -4.376em; left: 1em;"><span class="texatom" id="MathJax-Span-144"><span class="mrow" id="MathJax-Span-145"><span class="mn" id="MathJax-Span-146" style="font-size: 70.7%; font-family: MathJax_Main;">18</span></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.473em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.215em; border-left: 0px solid; width: 0px; height: 1.185em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi><mo>≤</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>18</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-26">N \le 10^{18}</script></span>;</li>
+    </ul>
+<p></p>
+
+</div>
+
+
+
+  <h3>Формат входного файла</h3>
+  <div>
+<p>
+    Входной файл содержит целые числа <span class="TeX" title="k"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-27-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-147" style="width: 0.622em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.549em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.366em, 1000.53em, 2.484em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-148"><span class="mi" id="MathJax-Span-149" style="font-family: MathJax_Math; font-style: italic;">k</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.083em; border-left: 0px solid; width: 0px; height: 0.876em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math></span></span><script type="math/tex" id="MathJax-Element-27">k</script></span> <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-28-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-150" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-151"><span class="mi" id="MathJax-Span-152" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-28">N</script></span>.
+</p>
+</div>
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+    Выходной файл должен содержать либо число, которое останется на доске,
+    либо слово <tt>IMPOSSIBLE</tt>, если на доске ничего не останется.
+</p>
+</div>
+    
+
+  <h3>Ограничения</h3>
+  <div>
+<p><span class="TeX" title="1 \le k \le 1000"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-29-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-153" style="width: 6.322em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.044em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.435em, 1006em, 2.679em, -1000em); top: -2.335em; left: 0em;"><span class="mrow" id="MathJax-Span-154"><span class="mn" id="MathJax-Span-155" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-156" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mi" id="MathJax-Span-157" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">k</span><span class="mo" id="MathJax-Span-158" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mn" id="MathJax-Span-159" style="font-family: MathJax_Main; padding-left: 0.278em;">1000</span></span><span style="display: inline-block; width: 0px; height: 2.335em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.215em; border-left: 0px solid; width: 0px; height: 1.008em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>k</mi><mo>≤</mo><mn>1000</mn></math></span></span><script type="math/tex" id="MathJax-Element-29">1 \le k \le 1000</script></span>;</p>
+<p><span class="TeX" title="1 \le N \le 10^{1000}"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-30-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;mo&gt;&amp;#x2264;&lt;/mo&gt;&lt;msup&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mrow class=&quot;MJX-TeXAtom-ORD&quot;&gt;&lt;mn&gt;1000&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-160" style="width: 7.009em; display: inline-block;"><span style="display: inline-block; position: relative; width: 6.731em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.403em, 1006.73em, 2.817em, -1000em); top: -2.473em; left: 0em;"><span class="mrow" id="MathJax-Span-161"><span class="mn" id="MathJax-Span-162" style="font-family: MathJax_Main;">1</span><span class="mo" id="MathJax-Span-163" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="mi" id="MathJax-Span-164" style="font-family: MathJax_Math; font-style: italic; padding-left: 0.278em;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span><span class="mo" id="MathJax-Span-165" style="font-family: MathJax_Main; padding-left: 0.278em;">≤</span><span class="msubsup" id="MathJax-Span-166" style="padding-left: 0.278em;"><span style="display: inline-block; position: relative; width: 2.489em; height: 0px;"><span style="position: absolute; clip: rect(3.111em, 1000.96em, 4.212em, -1000em); top: -3.984em; left: 0em;"><span class="mn" id="MathJax-Span-167" style="font-family: MathJax_Main;">10</span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span><span style="position: absolute; top: -4.376em; left: 1em;"><span class="texatom" id="MathJax-Span-168"><span class="mrow" id="MathJax-Span-169"><span class="mn" id="MathJax-Span-170" style="font-size: 70.7%; font-family: MathJax_Main;">1000</span></span></span><span style="display: inline-block; width: 0px; height: 3.984em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.473em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.215em; border-left: 0px solid; width: 0px; height: 1.185em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>≤</mo><mi>N</mi><mo>≤</mo><msup><mn>10</mn><mrow class="MJX-TeXAtom-ORD"><mn>1000</mn></mrow></msup></math></span></span><script type="math/tex" id="MathJax-Element-30">1 \le N \le 10^{1000}</script></span>;</p>
+<p>в записи числа <span class="TeX" title="N"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-31-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mi&gt;N&lt;/mi&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-171" style="width: 0.965em; display: inline-block;"><span style="display: inline-block; position: relative; width: 0.893em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.377em, 1000.89em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-172"><span class="mi" id="MathJax-Span-173" style="font-family: MathJax_Math; font-style: italic;">N<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.085em;"></span></span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.853em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>N</mi></math></span></span><script type="math/tex" id="MathJax-Element-31">N</script></span> нет лидирующий нулей;</p>
+</div>
+
+
+<h3>Примеры тестов</h3>
+<table class="sample" id="sample991367">
+<tbody><tr><th>№</th>
+<th>Входной файл (<tt>input.txt</tt>)</th>
+<th>Выходной файл (<tt>output.txt</tt>)</th></tr>
+
+<tr>
+  <td>1</td>
+  <td><pre><code>7
+1746
+</code></pre></td>
+  <td><pre><code>14</code></pre></td>
+</tr>
+
+<tr>
+  <td>2</td>
+  <td><pre><code>3
+106
+</code></pre></td>
+  <td><pre><code>6</code></pre></td>
+</tr>
+
+<tr>
+  <td>3</td>
+  <td><pre><code>10
+256
+</code></pre></td>
+  <td><pre><code>IMPOSSIBLE</code></pre></td>
+</tr>
+
+</tbody></table>
+
+
+  
+  <hr>
+</div>
+
+<div class="problem_text" style="page-break-before: always">
+  <a name="prE"></a>
+  <h2>Задача E. Тест: задания типа ЕГЭ</h2>
+Автор: Д. Давидюк, А. Кленин<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+Данная задача&nbsp;— тест. Требуется ответить на приведённые вопросы и 
+отправить ответ в тестирующую систему в указанном ниже формате.
+За каждый правильный ответ будут начисляться баллы.
+Баллы за все вопросы, кроме нулевого, будут видны после окончания тура.
+
+<div>
+<h3>Вопрос 0</h3>
+Сколько будет <span class="TeX" title="2 \times 2"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-32-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-174" style="width: 2.476em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.335em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.394em, 1002.28em, 2.473em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-175"><span class="mn" id="MathJax-Span-176" style="font-family: MathJax_Main;">2</span><span class="mo" id="MathJax-Span-177" style="font-family: MathJax_Main; padding-left: 0.222em;">×</span><span class="mn" id="MathJax-Span-178" style="font-family: MathJax_Main; padding-left: 0.222em;">2</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.071em; border-left: 0px solid; width: 0px; height: 0.835em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>2</mn><mo>×</mo><mn>2</mn></math></span></span><script type="math/tex" id="MathJax-Element-32">2 \times 2</script></span>?
+</div>
+
+<div>
+<h3>Вопрос 1</h3>
+<p>Система команд исполнителя РОБОТ, «живущего» в прямоугольном лабиринте на клетчатой плоскости: <table border="1"><tbody><tr><td>вверх</td><td>вниз</td><td>влево</td><td>вправо</td></tr></tbody></table> При выполнении этих команд РОБОТ перемещается на одну клетку соответственно: вверх ↑, вниз ↓, влево ←, вправо →.</p><p>Четыре команды проверяют условие отсутствия стены у той клетки, где находится РОБОТ <table border="1"><tbody><tr><td>сверху свободно</td><td>снизу свободно</td><td>слева свободно</td><td>справа свободно</td></tr></tbody></table></p><p>Цикл<br><br>ПОКА &lt; <i>условие</i> &gt; <i>команда</i> <br><br>выполняется, пока условие истинно, иначе происходит переход на следующую строку.<br><br>
+ Сколько клеток приведённого лабиринта соответствует условию, что, 
+выполнив предложенную ниже программу, РОБОТ остановится в той же клетке,
+ с которой он начал движение?</p>
+<table><tbody><tr><td>НАЧАЛО<br><br>ПОКА &lt; <b>справа свободно</b> &gt; <b>вправо</b><br><br>ПОКА &lt; <b>снизу свободно</b> &gt; <b>вниз</b><br><br>ПОКА &lt; <b>слева свободно</b> &gt; <b>влево</b><br><br>ПОКА &lt; <b>сверху свободно</b> &gt; <b>вверх</b><br><br>КОНЕЦ
+</td><td><div style="height: 150px; width: 150px;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" preserveAspectRatio="meet" version="1.1">
+<path stroke="gray" d="M0,25 h150 M0,50 h150 M0,75 h150 M0,100 h150 M0,125 h150 M25,0 v150 M50,0 v150 M75,0 v150 M100,0 v150 M125,0 v150"></path>
+<g stroke="black" stroke-width="2"><rect y="1" width="148" fill="none" x="1" height="148"></rect>
+<path d="M25,0 v25 M75,0 v25 M125,25 h25 M25,50 h25 M75,50 v25 M50,75 v25 M75,75 v25 M100,75 v25 M75,100 h25 M125,125 h25 M50,125 v25"></path>
+</g></svg>
+</div></td></tr></tbody></table>
+</div>
+
+<div>
+<h3>Вопрос 2</h3>
+Каково наименьшее натуральное число X, при котором истинно высказывание (<i>X</i> + 1) ⋅ (<i>X</i> + 1) ≤ 69 → (<i>X</i> − 1) ⋅ <i>X</i> &gt; 99?
+</div>
+
+<div>
+<h3>Вопрос 3</h3>
+У исполнителя Калькулятор две команды, которым присвоены номера: <b><ol> <li>Умножь на 2</li><li>Прибавь 8</li></ol></b>
+ Выполняя первую из них, Калькулятор умножает число на экране на 2, а 
+выполняя вторую, прибавляет к нему 8. Запишите порядок команд в 
+программе получения из числа 2 числа 68, содержащей не более 5 команд, 
+указывая лишь номера команд (Например, программа 21112 — это программма <b><ul> <li>прибавь 8</li><li>умножь на 2</li><li>умножь на 2</li><li>умножь на 2</li><li>прибавь 8,</li></ul></b> которая преобразует число 1 в число 80)
+</div>
+
+<div>
+<h3>Вопрос 4</h3>
+На одной улице стоят в ряд 4 дома, в которых живут 4 человека:
+<strong>Харитон</strong>, <strong>Ефим</strong>, <strong>Игнатий</strong>, <strong>Тимур</strong>.
+Известно, что каждый из них владеет ровно одной из следующих профессий:
+<strong>Горнорабочий</strong>, <strong>Журналист</strong>, <strong>Токарь</strong>, <strong>Хореограф</strong>,
+но неизвестно, кто какой и неизвестно, кто в каком доме живет.
+Однако, известно, что:<br><br><ol><li>Тимур живёт правее, чем Игнатий</li><li>Харитон живет левее, чем Игнатий</li><li>Токарь живёт не рядом c Журналистом</li><li>Журналист живет левее Токаря</li><li>Горнорабочий живет левее, чем Журналист</li><li>Ефим работает Журналистом</li></ol>
+Выясните, кто какой профессии, и кто где живет,
+и дайте ответ в виде номеров людей, в порядке слева направо.
+(<strong>Харитон</strong>&nbsp;— 1, <strong>Ефим</strong>&nbsp;— 2, <strong>Игнатий</strong>&nbsp;— 3, <strong>Тимур</strong>&nbsp;— 4)
+Например, если бы в домах жили (слева направо) Ефим, Тимур, Харитон, Игнатий, ответ был бы: 2413.
+</div>
+
+<div>
+<h3>Вопрос 5</h3>
+Строки (цепочки символов латинских букв) создаются по следующему
+правилу.
+Первая строка состоит из одного символа — латинской буквы «A». Каждая из
+последующих цепочек создается такими действиями: в очередную строку
+сначала записывается буква, чей порядковый номер в алфавите
+соответствует номеру строки (на <em>i</em>-м шаге пишется <em>i</em>-я буква алфавита), к ней
+слева дважды подряд приписывается предыдущая строка.
+Вот первые 4 строки, созданные по этому правилу:
+<ol>
+<li>A</li>
+<li>AAB</li>
+<li>AABAABC</li>
+<li>AABAABCAABAABCD</li>
+</ol>
+<p><i><b>Латинский алфавит (для справки)</b></i>:
+ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+Имеется задание:
+«Определить символ, стоящий в <em>n</em>-й строке на позиции
+<strong>2<sup><em>n</em>−2</sup> − 4</strong>, считая от
+левого края цепочки».
+<br><br>Выполните это задание для <strong><em>n</em> = 10</strong>, в ответе укажите номер буквы в алфавите
+(A&nbsp;— 1, B&nbsp;— 2, и т.д.)
+</div>
+
+<div>
+<h3>Вопрос 6</h3>
+У исполнителя Калькулятор две команды: <b><ol><li>вычти 3</li><li>прибавь 6</li></ol></b> Первая из них уменьшает число на экране
+на 3, вторая – увеличивает его на 6 (отрицательные числа допускаются). Программа
+для Калькулятора – это последовательность команд. Сколько различных чисел
+можно получить  из числа 3 с помощью программы, которая содержит ровно
+5 команд?
+</div>
+
+<div>
+<h3>Вопрос 7</h3>
+Сколько существует различных наборов значений логических переменных
+<i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, <i>x</i><sub>4</sub>, <i>x</i><sub>5</sub>, <i>x</i><sub>6</sub>, <i>x</i><sub>7</sub>, <i>x</i><sub>8</sub> которые
+удовлетворяют всем перечисленным ниже условиям?
+<p>(((<i>x</i><sub>1</sub> ≡ <i>x</i><sub>2</sub>) ∨ (<i>x</i><sub>3</sub> ≡ <i>x</i><sub>4</sub>)) ∧ (¬ (<i>x</i><sub>1</sub> ≡ <i>x</i><sub>2</sub>) ∨ ¬ (<i>x</i><sub>3</sub> ≡ <i>x</i><sub>4</sub>))) = 1<br><br>(((<i>x</i><sub>3</sub> ≡ <i>x</i><sub>4</sub>) ∨ (<i>x</i><sub>5</sub> ≡ <i>x</i><sub>6</sub>)) ∧ (¬ (<i>x</i><sub>3</sub> ≡ <i>x</i><sub>4</sub>) ∨ ¬ (<i>x</i><sub>5</sub> ≡ <i>x</i><sub>6</sub>))) = 1<br><br>
+(((<i>x</i><sub>5</sub> ≡ <i>x</i><sub>6</sub>) ∨ (<i>x</i><sub>7</sub> ≡ <i>x</i><sub>8</sub>)) ∧ (¬ (<i>x</i><sub>5</sub> ≡ <i>x</i><sub>6</sub>) ∨ ¬ (<i>x</i><sub>7</sub> ≡ <i>x</i><sub>8</sub>))) = 1</p> В ответе
+<strong><u>не нужно</u></strong>
+перечислять все различные наборы значений <i>x</i><sub>1</sub>, <i>x</i><sub>2</sub>, <i>x</i><sub>3</sub>, <i>x</i><sub>4</sub>, <i>x</i><sub>5</sub>, <i>x</i><sub>6</sub>, <i>x</i><sub>7</sub>, <i>x</i><sub>8</sub>, при которых выполнена данная
+система равенств. В качестве ответа вам нужно указать количество таких наборов.
+</div>
+</div>
+
+
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+В качестве решения принимается текстовый файл, содержащий по одному числу в строке&nbsp;— ответы на каждый из вопросов.
+При отправке файла следует выбрать в тестирующей системе среду разработки "Answer text".
+Если вы не знаете ответа на какой-то из вопросов, укажите вместо ответа число <tt>0</tt>.
+</p>
+</div>
+    
+
+
+
+  
+  <hr>
+</div>
+
+<div class="problem_text" style="page-break-before: always">
+  <a name="prF"></a>
+  <h2>Задача F. Тест: теория сложности и подчсёт</h2>
+Автор: А. Ким, А. Кленин<br><br>
+<table class="nobr">
+<tbody><tr>
+  <td width="1%">Входной файл:</td><td>input.txt</td>
+  <td>&nbsp;</td>
+  <td width="1%">Ограничение времени на тест:</td><td>1 сек</td></tr>
+<tr>
+  <td>Выходной файл:</td><td>output.txt</td>
+  <td>&nbsp;</td>
+  <td>Ограничение памяти на тест:</td><td>256 Мб</td></tr>
+  <tr><td>Максимальная оценка:</td><td>100 баллов</td>
+  <td colspan="3">&nbsp;</td></tr>
+</tbody></table>
+
+
+  <h3>Условие</h3>
+  <div>
+Данная задача&nbsp;— тест. Требуется ответить на приведённые вопросы и 
+отправить ответ в тестирующую систему в указанном ниже формате.
+Если в вопросе предлагается выбор одного из нескольких вариантов, 
+укажите номер правильного варианта.
+За каждый правильный ответ будут начисляться баллы.
+Баллы за все вопросы, кроме нулевого, будут видны после окончания тура.
+
+<div>
+<h3>Вопрос 0</h3>
+Сколько будет <span class="TeX" title="3 \times 3"><span class="MathJax_Preview" style="color: inherit; display: none;"></span><span class="MathJax" id="MathJax-Element-33-Frame" tabindex="0" style="position: relative;" data-mathml="&lt;math xmlns=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mo&gt;&amp;#x00D7;&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/math&gt;" role="presentation"><nobr aria-hidden="true"><span class="math" id="MathJax-Span-179" style="width: 2.476em; display: inline-block;"><span style="display: inline-block; position: relative; width: 2.335em; height: 0px; font-size: 104%;"><span style="position: absolute; clip: rect(1.395em, 1002.29em, 2.495em, -1000em); top: -2.266em; left: 0em;"><span class="mrow" id="MathJax-Span-180"><span class="mn" id="MathJax-Span-181" style="font-family: MathJax_Main;">3</span><span class="mo" id="MathJax-Span-182" style="font-family: MathJax_Main; padding-left: 0.222em;">×</span><span class="mn" id="MathJax-Span-183" style="font-family: MathJax_Main; padding-left: 0.222em;">3</span></span><span style="display: inline-block; width: 0px; height: 2.266em;"></span></span></span><span style="display: inline-block; overflow: hidden; vertical-align: -0.094em; border-left: 0px solid; width: 0px; height: 0.857em;"></span></span></nobr><span class="MJX_Assistive_MathML" role="presentation"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>3</mn><mo>×</mo><mn>3</mn></math></span></span><script type="math/tex" id="MathJax-Element-33">3 \times 3</script></span>?
+</div>
+
+<div>
+<h3>Вопрос 1</h3>
+Функция 8 + 6 ⋅ <i>n</i> + 3 ⋅ <i>n</i><sup>2</sup> + 3 ⋅ <i>n</i><sup>5</sup> является
+<ol>
+<li><i>O</i>(<i>n</i>)</li>
+<li><i>O</i>(<i>n</i><sup>5</sup>)</li>
+<li><i>O</i>(<i>n</i><sup>2</sup>)</li>
+<li><i>O</i>(8)</li>
+</ol>
+</div>
+
+<div>
+<h3>Вопрос 2</h3>
+Всякая функция, являющаяся <i>O</i>(<i>n</i><sup>5</sup>), является также и
+<ol>
+<li><i>O</i>(<i>n</i><sup>-5</sup>)</li>
+<li><i>O</i>(<i>n</i><sup>(1 / 5)</sup>)</li>
+<li><i>O</i>(4<sup><i>n</i></sup>)</li>
+<li><i>O</i>(log(<i>n</i>) + <i>n</i><sup>3</sup>)</li>
+</ol>
+
+</div>
+
+<div>
+<h3>Вопрос 3</h3>
+Асимптотическую сложность следующего алгоритма равна <i>Θ</i>(<i>m</i><sup><i>x</i></sup>): <table border="1">
+<tbody><tr><th>Си</th><th>Бейсик</th></tr>
+<tr><td><pre>j = pow(m, 2);
+for (i = 0; i &lt;= pow(j, 2); ++i){
+  for (k = 0; k &lt;= pow(m, 3); ++k){
+    if (k == 0)
+      for (ib = 0; ib &lt;= pow(j, 3); ++ib)
+        print(ib, i, k);
+    if (i &lt;= pow(j, 2))
+      for (a = 0; a &lt;= pow(m, 2); ++a)
+        print(k, a, i);
+  }
+  for (jb = 0; jb &lt;= pow(i, 2); ++jb)
+    if (jb == i)
+      for (c = 0; c &lt;= ib; ++c)
+        print(c, jb, i);
+}</pre></td><td><pre>j = m ^ 2
+FOR i = 0 TO j ^ 2
+  FOR k = 0 TO m ^ 3
+    IF k = 0 THEN FOR ib = 0 TO j ^ 3
+      PRINT ib, i, k
+    NEXT ib
+    IF i &lt;= j ^ 2 THEN FOR a = 0 TO m ^ 2
+      PRINT k, a, i
+    NEXT a
+  NEXT k
+  FOR jb = 0 TO i ^ 2
+    IF jb = i THEN FOR c = 0 TO ib
+      PRINT c, jb, i
+    NEXT c
+  NEXT jb
+NEXT i</pre></td></tr>
+<tr><th>Паскаль</th><th>Алгоритмический</th></tr>
+<tr><td><pre>j := m ** 2;
+for i := 0 to j ** 2 do begin
+  for k := 0 to m ** 3 do begin
+    if k = 0 then
+      for ib := 0 to j ** 3 do
+        write(ib, i, k);
+    if i &lt;= j ** 2 then
+      for a := 0 to m ** 2 do
+        write(k, a, i);
+  end;
+  for jb := 0 to i ** 2 do
+    if jb = i then
+      for c := 0 to ib do
+        write(c, jb, i);
+end;</pre></td><td><pre>j := m ** 2
+нц для i от 0 до j ** 2
+  нц для k от 0 до m ** 3
+    если k = 0 то
+      нц для ib от 0 до j ** 3
+        вывод ib, i, k
+      кц
+    все
+    если i &lt;= j ** 2 то
+      нц для a от 0 до m ** 2
+        вывод k, a, i
+      кц
+    все
+  кц
+  нц для jb от 0 до i ** 2
+    если jb = i то
+      нц для c от 0 до ib
+        вывод c, jb, i
+      кц
+    все
+  кц
+кц</pre></td></tr>
+</tbody></table>
+Чему равен <i>x</i>?
+</div>
+
+<div>
+<h3>Вопрос 4</h3>
+Дан алгоритм <table border="1">
+<tbody><tr><th>Си</th><th>Бейсик</th></tr>
+<tr><td><pre>for (j = 0; j &lt;= pow(m, 2); ++j){
+  b = m;
+  for (k = 0; k &lt;= pow(b, 2); ++k)
+    print(j, k);
+  for (c = 0; c &lt;= pow(k, 3); ++c)
+    for (i = 0; i &lt;= pow(c, 3); ++i){
+      cc = m;
+      if (XXXXX)
+        for (ib = 0; ib &lt;= pow(c, 3); ++ib)
+          print(i, ib, j, c);
+      for (kj = 0; kj &lt;= pow(m, 3); ++kj)
+        print(i, c, j, kj);
+    }
+}</pre></td><td><pre>FOR j = 0 TO m ^ 2
+  b = m
+  FOR k = 0 TO b ^ 2
+    PRINT j, k
+  NEXT k
+  FOR c = 0 TO k ^ 3
+    FOR i = 0 TO c ^ 3
+      cc = m
+      IF XXXXX THEN FOR ib = 0 TO c ^ 3
+        PRINT i, ib, j, c
+      NEXT ib
+      FOR kj = 0 TO m ^ 3
+        PRINT i, c, j, kj
+      NEXT kj
+    NEXT i
+  NEXT c
+NEXT j</pre></td></tr>
+<tr><th>Паскаль</th><th>Алгоритмический</th></tr>
+<tr><td><pre>for j := 0 to m ** 2 do begin
+  b := m;
+  for k := 0 to b ** 2 do
+    write(j, k);
+  for c := 0 to k ** 3 do
+    for i := 0 to c ** 3 do begin
+      cc := m;
+      if XXXXX then
+        for ib := 0 to c ** 3 do
+          write(i, ib, j, c);
+      for kj := 0 to m ** 3 do
+        write(i, c, j, kj);
+    end;
+end;</pre></td><td><pre>нц для j от 0 до m ** 2
+  b := m
+  нц для k от 0 до b ** 2
+    вывод j, k
+  кц
+  нц для c от 0 до k ** 3
+    нц для i от 0 до c ** 3
+      cc := m
+      если XXXXX то
+        нц для ib от 0 до c ** 3
+          вывод i, ib, j, c
+        кц
+      все
+      нц для kj от 0 до m ** 3
+        вывод i, c, j, kj
+      кц
+    кц
+  кц
+кц</pre></td></tr>
+</tbody></table>
+ Чтобы сложность этого алгоритма составляла <i>Θ</i>(<i>m</i><sup>42</sup>), строку XXXXX следует заменить на выражение
+<ol>
+<li><i>i</i> = <i>j</i></li>
+<li><i>j</i> ≤ <i>b</i><sup>2</sup></li>
+<li><i>j</i> ≤ <i>cc</i></li>
+<li><i>j</i> = 0</li>
+</ol>
+</div>
+
+<div>
+<h3>Вопрос 5</h3>
+Асимптотическую сложность следующего алгоритма равна <i>Θ</i>(<i>m</i><sup><i>x</i></sup>): <table border="1">
+<tbody><tr><th>Си</th><th>Бейсик</th></tr>
+<tr><td><pre>for (i = 0; i &lt;= pow(m, 3); ++i)
+  for (j = 0; j &lt;= pow(m, 2); ++j){
+    k = m;
+    for (ib = 0; ib &lt;= k; ++ib)
+      for (b = 0; b &lt;= pow(m, 3); ++b)
+        print(j, i, ib, b);
+    if (i == 0)
+      for (jj = 0; jj &lt;= ib; ++jj)
+        for (ba = 0; ba &lt;= pow(b, 2); ++ba)
+          print(jj, j, ba, i);
+  }</pre></td><td><pre>FOR i = 0 TO m ^ 3
+  FOR j = 0 TO m ^ 2
+    k = m
+    FOR ib = 0 TO k
+      FOR b = 0 TO m ^ 3
+        PRINT j, i, ib, b
+      NEXT b
+    NEXT ib
+    IF i = 0 THEN FOR jj = 0 TO ib
+      FOR ba = 0 TO b ^ 2
+        PRINT jj, j, ba, i
+      NEXT ba
+    NEXT jj
+  NEXT j
+NEXT i</pre></td></tr>
+<tr><th>Паскаль</th><th>Алгоритмический</th></tr>
+<tr><td><pre>for i := 0 to m ** 3 do
+  for j := 0 to m ** 2 do begin
+    k := m;
+    for ib := 0 to k do
+      for b := 0 to m ** 3 do
+        write(j, i, ib, b);
+    if i = 0 then
+      for jj := 0 to ib do
+        for ba := 0 to b ** 2 do
+          write(jj, j, ba, i);
+  end;</pre></td><td><pre>нц для i от 0 до m ** 3
+  нц для j от 0 до m ** 2
+    k := m
+    нц для ib от 0 до k
+      нц для b от 0 до m ** 3
+        вывод j, i, ib, b
+      кц
+    кц
+    если i = 0 то
+      нц для jj от 0 до ib
+        нц для ba от 0 до b ** 2
+          вывод jj, j, ba, i
+        кц
+      кц
+    все
+  кц
+кц</pre></td></tr>
+</tbody></table>
+Чему равен <i>x</i>?
+</div>
+
+<div>
+<h3>Вопрос 6</h3>
+Определите количество вызовов функции <code>f</code> при исполнении следующего алгоритма (в предположении неограниченной длины целых чисел): <table border="1">
+<tbody><tr><th>Си</th><th>Бейсик</th></tr>
+<tr><td><pre>int f(int n) {
+  int f;
+  if (n &gt;= 55555555555)
+    f = f(n / 5) + 1;
+  if (n &lt; 55555555555 &amp;&amp; n &gt;= 5263157894)
+    f = f(n - 3) + 1;
+  if (n &lt; 5263157894)
+    f = 1;
+  return f;
+}
+
+print(f(1000000000000));</pre></td><td><pre>FUNCTION f(n)
+  IF n &gt;= 55555555555 THEN f = f(n / 5) + 1
+  IF n &lt; 55555555555 AND n &gt;= 5263157894 THEN f = f(n - 3) + 1
+  IF n &lt; 5263157894 THEN f = 1
+END FUNCTION
+
+PRINT f(1000000000000)</pre></td></tr>
+<tr><th>Паскаль</th><th>Алгоритмический</th></tr>
+<tr><td><pre>function f(n: integer): integer;
+begin
+  if n &gt;= 55555555555 then
+    f := f(n / 5) + 1;
+  if (n &lt; 55555555555) and (n &gt;= 5263157894) then
+    f := f(n - 3) + 1;
+  if n &lt; 5263157894 then
+    f := 1;
+end;
+
+write(f(1000000000000));</pre></td><td><pre>алг цел f(цел n)
+нач
+  если n &gt;= 55555555555 то
+    f := f(n / 5) + 1
+  все
+  если n &lt; 55555555555 и n &gt;= 5263157894 то
+    f := f(n - 3) + 1
+  все
+  если n &lt; 5263157894 то
+    f := 1
+  все
+кон
+
+вывод f(1000000000000)</pre></td></tr>
+</tbody></table>
+
+</div>
+
+<div>
+<h3>Вопрос 7</h3>
+Известно, что в дереве, каждый узел которого имеет степень либо 6 
+(внутренний узел), либо 0 (листовой узел), имеется 1486 листовых узлов. 
+Определите количество узлов в этом дереве.
+</div>
+
+<div>
+<h3>Вопрос 8</h3>
+Известно, что в дереве, каждый узел которого имеет степень либо 5, либо 
+0, высота равна 7. Определите максимально возможное количество узлов 
+такого дерева. (Высота дерева — максимальная длина пути от вершины 
+дерева до его корня. Например, высота дерева, состоящего только из 
+корня, равна 0.)
+</div>
+
+<div>
+<h3>Вопрос 9</h3>
+Графическая последовательность чисел — последовательность целых 
+неотрицательных чисел такая, что существует граф, последовательность 
+степеней вершин которого совпадает с ней.
+Какая из следующих последовательностей является графической?
+<ol>
+<li>5,5,2,2,1,1</li>
+<li>5,4,3,3,2,1</li>
+<li>5,4,3,2,1,1</li>
+<li>5,5,4,3,2,1</li>
+</ol>
+</div>
+
+</div>
+
+
+
+
+
+  <h3>Формат выходного файла</h3>
+  <div>
+<p>
+В качестве решения принимается текстовый файл, содержащий по одному числу в строке&nbsp;— ответы на каждый из вопросов.
+При отправке файла следует выбрать в тестирующей системе среду разработки "Answer text".
+Если вы не знаете ответа на какой-то из вопросов, укажите вместо ответа число <tt>0</tt>.
+</p>
+</div>
+    
+
+
+
+  
+  <hr>
+</div>
+
+<script type="text/javascript" src="tasks_files/whitespace.js"></script>
+<script type="text/javascript">ws_init('spaces', [991860,991799,992295,991367,991902,992027])</script><input class="button jsonly" onclick="ws_toggle()" value="spaces" type="button">
+<span class="timing">0.041s 0.003s</span>
+
+
+
+<div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px none; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px none; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-size-adjust: none; font-family: MathJax_Main,sans-serif;"></div></div></body></html>
